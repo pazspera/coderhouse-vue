@@ -1,5 +1,3 @@
-console.log("Glassmorphism Counter");
-
 let app = new Vue({
   el: "#app",
   data: {

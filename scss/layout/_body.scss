@@ -1,0 +1,18 @@
+body {
+  padding: 4.5rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(92, 92, 94);
+  background: radial-gradient(circle, rgba(92, 92, 94, 1) 0%, rgba(121, 9, 96, 1) 35%, rgba(0, 254, 255, 1) 100%); */
+  /* Gradient */
+  background: hsla(337, 82%, 51%, 1);
+
+  background: linear-gradient(135deg, hsla(337, 82%, 51%, 1) 0%, hsla(190, 89%, 44%, 1) 80%);
+
+  background: -moz-linear-gradient(135deg, hsla(337, 82%, 51%, 1) 0%, hsla(190, 89%, 44%, 1) 80%);
+
+  background: -webkit-linear-gradient(135deg, hsla(337, 82%, 51%, 1) 0%, hsla(190, 89%, 44%, 1) 80%);
+}

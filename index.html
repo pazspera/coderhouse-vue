@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,14 +13,16 @@
   </head>
   <body>
     <div id="app">
-      <div class="counter">
+      <div class="counter card">
         <div class="container">
           <h1>Contador</h1>
-          <button v-on:click="increaseCounter">+</button>
-          <div id="counter">
-            <p>{{ counter }}</p>
+          <div class="counter__content">
+            <button v-on:click="increaseCounter">+</button>
+            <div id="counter">
+              <p class="counter-number">{{ counter }}</p>
+            </div>
+            <button v-on:click="decreaseCounter">-</button>
           </div>
-          <button v-on:click="decreaseCounter">-</button>
         </div>
       </div>
     </div>
