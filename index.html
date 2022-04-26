@@ -12,14 +12,16 @@
     <title>Contador - Paz Spera</title>
   </head>
   <body>
-    <div class="counter card">
-      <div class="container">
-        <h1>Contador</h1>
-        <button>+</button>
-        <div id="counter">
-          <p>The counter will show here</p>
+    <div id="app">
+      <div class="counter">
+        <div class="container">
+          <h1>Contador</h1>
+          <button v-on:click="increaseCounter">+</button>
+          <div id="counter">
+            <p>{{ counter }}</p>
+          </div>
+          <button v-on:click="decreaseCounter">-</button>
         </div>
-        <button>-</button>
       </div>
     </div>
   </body>
