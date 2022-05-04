@@ -63,9 +63,22 @@ let app = new Vue({
     },
     tapas: {
       titles: ["Id", "Nombre", "Descripción", "Precio"],
+      products: [
+        ["Papas con Cheddar", "Papas fritas con salsa cheddar", "550"],
+        ["Papas Fogosas", "Papas fritas con salsa picante", "550"],
+        ["Nachos Completos", "Nachos con queso cheddar y dip de guacamole", "750"],
+        ["Mozzarellas Pasión", "Triángulos de queso mozzarella rebozados (6) con salsa de toma y guacamole", "950"],
+      ],
     },
     drinks: {
       titles: ["Id", "Nombre", "Precio"],
+      products: [
+        ["Coca Cola Lata 354ml", "250"],
+        ["Sprite Lata 354ml","250"],
+        ["Agua Botella 500ml",  "250"],
+        ["Porrón Patagonia 500ml","450"],
+        ["Botella Patagonia 1 litro", "950"],
+      ],
     },
   },
   template: `
@@ -77,12 +90,12 @@ let app = new Vue({
 
         <div class="col mt-3 mb-5">
             <h2 class="mb-3">Tapas</h2>
-            <table-products :titles="tapas.titles"></table-products>
+            <table-products :titles="tapas.titles" :products="tapas.products"></table-products>
         </div>
 
         <div class="col mt-3 mb-5">
             <h2 class="mb-3">Bebidas</h2>
-            <table-products :titles="drinks.titles"></table-products>
+            <table-products :titles="drinks.titles" :products="drinks.products"></table-products>
         </div>
     </main>
   `,
