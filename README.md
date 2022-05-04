@@ -1,4 +1,4 @@
-# Desafío 02
+# Desafío 02 - Componentes
 
 ## Consigna:
 
