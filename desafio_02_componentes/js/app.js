@@ -15,48 +15,20 @@
 
 */
 
-/* Vue.component("tabla-hamburguesas", {
-  props: {
-    titulos: {
-      type: Array,
-      required: true,
-    },
-  },
-  template: `
-        <div class="col">
-            <h2 class="mb-3">Tabla hamburguesas</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col" v-for="(titulo, t) in titulos" :key="t"> {{ titulo }}</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    `,
-});
-
-let app = new Vue({
-  el: "#app",
-  data: {
-    tablaHamburguesas: {
-      titulos: ["Id", "Nombre", "Descripción", "Precio"],
-    },
-  },
-  template: `
-    <main class="container my-5">
-        <tabla-hamburguesas :titulos="tablaHamburguesas.titulos"></tabla-hamburguesas>
-    </main>
-  `,
-});
- */
-
 Vue.component("table-products", {
   props: {
     titles: {
       type: Array,
       required: true,
     },
+    products: {
+      type: Array,
+      required: true,
+    },
+    /* classes: {
+      type: Array,
+      required: true,
+    }, */
   },
   template: `
         <div class="col">
@@ -66,6 +38,12 @@ Vue.component("table-products", {
                         <th scope="col" v-for="(title, t) in titles" :key="t"> {{ title }}</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr v-for="(product, p) in products" :key="p">
+                        <td>{{ p + 1 }} </td>
+                        <td v-for="(row, r) in product" :key="r">{{ row }}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     `,
@@ -76,6 +54,12 @@ let app = new Vue({
   data: {
     hamburgers: {
       titles: ["Id", "Nombre", "Descripción", "Precio"],
+      products: [
+        ["Doble Bacon", "2 medallones de carne de 100gr, cheddar, panceta ahumada, cebolla caramelizada", "1120"],
+        ["Baby Blue", "Medallón de carne de 100gr, queso azul, morrón, cebolla caramelizada, pepinillos", "1050"],
+        ["Locura Not Burger", "Medallón not burger, guacamole, tomate, cebolla caramelizada, huevo frito", "1050"],
+        ["Remolacha Pasión", "Medallón de remolacha, tomates cherry, mozzarella", "950"],
+      ],
     },
     tapas: {
       titles: ["Id", "Nombre", "Descripción", "Precio"],
@@ -88,7 +72,7 @@ let app = new Vue({
     <main class="container my-5">
         <div class="col mt-3 mb-5">
             <h2 class="mb-3">Hamburguesas</h2>
-            <table-products :titles="hamburgers.titles"></table-products>
+            <table-products :titles="hamburgers.titles" :products="hamburgers.products"></table-products>
         </div>
 
         <div class="col mt-3 mb-5">
