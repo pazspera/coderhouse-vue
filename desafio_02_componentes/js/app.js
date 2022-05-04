@@ -1,20 +1,3 @@
-/* 
-    El proyecto es de comidas así que podemos hacer 3 tablas con productos de comida
-    Va a ser una hamburguesería
-
-    - Hamburguesas
-    titulos: Id, Nombre, Descripción, Precio
-
-    - Tapeo
-    titulos: Id, Nombre, Descripción, Precio
-
-    - Bebidas
-    titulos: Id, Nombre, Precio
-    
-
-
-*/
-
 Vue.component("table-products", {
   props: {
     titles: {
