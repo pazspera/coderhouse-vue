@@ -1,1 +1,1 @@
-Desafío del curso Vue de Coderhouse.
+Desafíos del curso Vue de Coderhouse.
