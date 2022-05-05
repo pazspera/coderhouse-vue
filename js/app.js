@@ -38,10 +38,26 @@ let app = new Vue({
     hamburgers: {
       titles: ["Id", "Nombre", "Descripción", "Precio"],
       products: [
-        ["Doble Bacon", "2 medallones de carne de 100gr, cheddar, panceta ahumada, cebolla caramelizada", "1120"],
-        ["Baby Blue", "Medallón de carne de 100gr, queso azul, morrón, cebolla caramelizada, pepinillos", "1050"],
-        ["Locura Not Burger", "Medallón not burger, guacamole, tomate, cebolla caramelizada, huevo frito", "1050"],
-        ["Remolacha Pasión", "Medallón de remolacha, tomates cherry, mozzarella", "950"],
+        {
+          name: "Doble Bacon",
+          description: "2 medallones de carne de 100gr, cheddar, panceta ahumada, cebolla caramelizada",
+          price: "1120",
+        },
+        {
+          name: "Baby Blue",
+          description: "Medallón de carne de 100gr, queso azul, morrón, cebolla caramelizada, pepinillos",
+          price: "1050",
+        },
+        {
+          name: "Locura Not Burger",
+          description: "Medallón not burger, guacamole, tomate, cebolla caramelizada, huevo frito",
+          price: "1050",
+        },
+        {
+          name: "Remolacha Pasión",
+          description: "Medallón de remolacha, tomates cherry, mozzarella",
+          price: "950",
+        },
       ],
       cssClasses: {
         "table-dark": true,
@@ -51,10 +67,26 @@ let app = new Vue({
     tapas: {
       titles: ["Id", "Nombre", "Descripción", "Precio"],
       products: [
-        ["Papas con Cheddar", "Papas fritas con salsa cheddar", "550"],
-        ["Papas Fogosas", "Papas fritas con salsa picante", "550"],
-        ["Nachos Completos", "Nachos con queso cheddar y dip de guacamole", "750"],
-        ["Mozzarellas Pasión", "Triángulos de queso mozzarella rebozados (6) con salsa de toma y guacamole", "950"],
+        {
+          name: "Papas con Cheddar",
+          description: "Papas fritas con salsa cheddar",
+          price: "550",
+        },
+        {
+          name: "Papas Fogosas",
+          description: "Papas fritas con salsa picante",
+          price: "550",
+        },
+        {
+          name: "Nachos Completos",
+          description: "Nachos con queso cheddar y dip de guacamole",
+          price: "750",
+        },
+        {
+          name: "Mozzarellas Pasión",
+          description: "Triángulos de queso mozzarella rebozados (6) con salsa de toma y guacamole",
+          price: "950",
+        },
       ],
       cssClasses: {
         "table-striped": true,
@@ -64,11 +96,26 @@ let app = new Vue({
     drinks: {
       titles: ["Id", "Nombre", "Precio"],
       products: [
-        ["Coca Cola Lata 354ml", "250"],
-        ["Sprite Lata 354ml", "250"],
-        ["Agua Botella 500ml", "250"],
-        ["Porrón Patagonia 500ml", "450"],
-        ["Botella Patagonia 1 litro", "950"],
+        {
+          name: "Coca Cola Lata 354ml",
+          price: "250",
+        },
+        {
+          name: "Sprite Lata 354ml",
+          price: "250",
+        },
+        {
+          name: "Agua Botella 500ml",
+          price: "250",
+        },
+        {
+          name: "Porrón Patagonia 500ml",
+          price: "450",
+        },
+        {
+          name: "Botella Patagonia 1 litro",
+          price: "950"
+        }
       ],
       cssClasses: {
         "table-light": true,
